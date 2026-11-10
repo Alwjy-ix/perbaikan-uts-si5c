@@ -23,7 +23,7 @@ exports.create = async (req, res) => {
   }
 };
 
-exports.getAll = async (req, res) => {s
+exports.getAll = async (req, res) => {
   const filter = {};
   if(req.query.kondisi){ //filter kondisi alat
     filter['kondisi'] = String(req.query.kondisi); //karena bukan subdocument
